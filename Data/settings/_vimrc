@@ -1,0 +1,41 @@
+set nocompatible
+syntax on
+set backspace=indent,eol,start
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set rnu
+set nu
+set nowrap
+set smartcase
+set incsearch
+set splitright
+set path+=**
+set wildmenu
+set autowrite
+filetype plugin on
+
+
+autocmd GUIEnter * set vb t_vb=
+
+set guioptions=
+set guifont=Consolas:h12
+
+nnoremap <F5> :buffers<CR>:buffer<Space>
+nnoremap <leader>pfn :echo expand('%:p')<CR>
+nnoremap <C-s> :%s/<C-r><C-w>//g<left><left>
+nnoremap <F1> :e!<CR>
+nnoremap <F2> :!./run<CR>
+
+
+
+
+
+
+
+set bg=dark
+colorscheme gruvbox
+imap jj <Esc>
+
+let g:airline#extensions#tabline#enabled=1
